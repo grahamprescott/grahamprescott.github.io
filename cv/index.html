@@ -54,14 +54,14 @@
     <div class="body built">
       <article>
         <h3>Structured AI-Assisted Evidence Synthesis (SAES) <span class="ver">v0.2.1-alpha · open protocol</span></h3>
-        <p>A schema-first protocol that makes each step of LLM evidence synthesis explicit and auditable. Every coded field is paired with the verbatim text it came from; generation is split from evaluation at every stage; every search string and screening decision is logged, so any consolidated claim traces back to the papers it draws on.</p>
+        <p>A schema-first protocol that makes each step of LLM evidence synthesis explicit and auditable. Every coded field is paired with the verbatim text it came from; generation is split from evaluation at every stage; every search string and screening decision is logged, so that any consolidated claim can be traced back to the papers it draws on.</p>
         <div class="pipe">
           <span class="stage"><b>1</b> setup</span><span class="to">→</span>
           <span class="stage"><b>2</b> extraction + audit</span><span class="to">→</span>
           <span class="stage"><b>3</b> accumulation</span><span class="to">→</span>
           <span class="stage">consolidated evidence base with provenance</span>
         </div>
-        <p>Tested on three questions spanning medicine, agriculture and environmental impact, and validated against a hand-coded gold-standard dataset on artisanal gold mining. Next: benchmark against human coding, run the audit in an independent model, replace vote-counting with a pooled estimate.</p>
+        <p>Run end to end on three corpora spanning medicine, agriculture and environmental impact; operated by hand and not yet benchmarked. An adversarial audit of the worked examples (September 2026) found that extraction quoted sources accurately where it could be checked, and that one consolidation had been written from the model's memory rather than the rows; the findings are recorded in the repo's KNOWN_ISSUES file. Next: benchmark against human coders, enforce provenance in code, run the audit in an independent model.</p>
         <p class="src">source: <a href="https://github.com/grahamprescott/structured-evidence-synthesis">github.com/grahamprescott/structured-evidence-synthesis</a></p>
       </article>
 
